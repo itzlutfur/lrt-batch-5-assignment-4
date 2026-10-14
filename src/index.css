@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0077bc;
+  --color-secondary: #009866;
+  --color-surface: #111111;
+  --color-text: #111827;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a0a0a;
+  color: #f3f4f6;
+  overflow-x: hidden;
+}
+.font-display {
+  font-family: "Archivo Black", sans-serif;
+}
+.font-mono-code {
+  font-family: "JetBrains Mono", monospace;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
