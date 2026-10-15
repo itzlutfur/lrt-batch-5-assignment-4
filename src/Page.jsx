@@ -11,7 +11,7 @@ export default function Page() {
     <>
       <Header route={route} setRoute={setRoute} />
       {route === "catalog" && <CatalogContainer />}
-      {route === "shelf" && <ShelfContainer />}
+      {route === "shelf" && <ShelfContainer setRoute={setRoute} />}
       <Footer />
     </>
   );
