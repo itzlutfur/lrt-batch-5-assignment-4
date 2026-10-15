@@ -1,12 +1,17 @@
-import MainContainer from "./components/MainContainer";
+import { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import CatalogContainer from "./components/CatalogContainer";
+import ShelfContainer from "./components/ShelfContainer";
 
 export default function Page() {
+  const [route, setRoute] = useState("catalog");
+
   return (
     <>
-      <Header />
-      <MainContainer />
+      <Header route={route} setRoute={setRoute} />
+      {route === "catalog" && <CatalogContainer />}
+      {route === "shelf" && <ShelfContainer />}
       <Footer />
     </>
   );

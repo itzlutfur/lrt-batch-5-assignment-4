@@ -1,6 +1,6 @@
-import HeroSection from "./HeroSection";
+import HeroSection from "./catalog/HeroSection";
 
-export default function MainContainer() {
+export default function CatalogContainer() {
   return (
     <>
       <HeroSection />
