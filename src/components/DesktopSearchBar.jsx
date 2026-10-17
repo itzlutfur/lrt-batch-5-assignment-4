@@ -9,12 +9,8 @@ export default function DesktopSearchBar() {
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <circle cx="11" cy="11" r="8" stroke-width="2.5" />
-            <path
-              d="m21 21-4.3-4.3"
-              stroke-width="2.5"
-              stroke-linecap="round"
-            />
+            <circle cx="11" cy="11" r="8" strokeWidth="2.5" />
+            <path d="m21 21-4.3-4.3" strokeWidth="2.5" strokeLinecap="round" />
           </svg>
         </div>
         <input

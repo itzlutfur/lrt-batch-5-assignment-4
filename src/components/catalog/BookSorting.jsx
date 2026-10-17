@@ -1,4 +1,8 @@
+import {useContext} from "react";
+import { BookListContext } from "../../contexts";
+
 export default function BookSorting() {
+  const { bookList } = useContext(BookListContext);
   return (
     <div className="bg-[#111111] border border-neutral-800 rounded-2xl p-4 sm:p-5 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
       <div className="flex items-center gap-3">
@@ -6,14 +10,14 @@ export default function BookSorting() {
           id="books-count"
           className="font-display text-sm sm:text-base text-white tracking-wide uppercase"
         >
-          50 Books available
+          {bookList.count} Books available
         </span>
       </div>
 
       {/* <!-- Client Side Sorting Control (Requirement: Newest, Oldest, Rating) --> */}
       <div className="flex items-center justify-between sm:justify-end gap-3 w-full sm:w-auto">
         <label
-          for="sort-select"
+          htmlFor="sort-select"
           className="text-xs font-mono-code uppercase font-bold text-neutral-400 shrink-0"
         >
           Sort By:
@@ -35,9 +39,9 @@ export default function BookSorting() {
               viewBox="0 0 24 24"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2.5"
                 d="M19 9l-7 7-7-7"
               />
             </svg>

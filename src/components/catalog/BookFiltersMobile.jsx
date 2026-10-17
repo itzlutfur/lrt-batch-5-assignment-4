@@ -18,7 +18,7 @@ export default function BookFiltersMobile() {
           >
             <polygon
               points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
-              stroke-width="2.5"
+              strokeWidth="2.5"
             />
           </svg>
           <span id="mobile-filter-btn-text">Filters & Rating</span>
